@@ -1,2 +1,2 @@
 # CrowdFlower
-Some code for Kaggle's Crowdflower Competition
+Some code for Kaggle Crowdflower Competition
