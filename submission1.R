@@ -5,7 +5,7 @@
 setwd("C:/Users/Sarah/Desktop/Data Science/Projects/crowdflower")
 
 
-#Libraries
+
 lapply(c("irlba","tm","caret","Metrics","e1071","rARPACK","Matrix","dplyr","stringdist","XML"
          ,"kernlab","readr","slam","doParallel","foreach","lsa","stringr"),
        require,character.only=T)
