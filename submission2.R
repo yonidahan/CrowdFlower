@@ -296,11 +296,6 @@ test.data.fin = test.data %*% g_train_svd$v;
 test.data.fin<-cbind(test.data.fin,test.metr)
 
 # train best model
-# note that for gamma/sigma (same stuff here)
-# python gamma by default is 1/ncol
-# while R ksvm is using more complex estimation of sigma
-# here it is set to python default
-# but try ksvm default :)
 sv_model = ksvm(as.matrix(train.data.fin),as.factor(y),
                 kernel="rbfdot",
                 C=best_result$svm_cost,
@@ -315,4 +310,3 @@ table(sub.p);
 write.csv(data.frame("id"=test$id, "prediction"=sub.p),"submission2.csv",quote=F,row.names=F);
 
 
-#LB 0.61703  TRAIN 0.5951569
