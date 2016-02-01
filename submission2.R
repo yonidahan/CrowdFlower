@@ -6,8 +6,7 @@ lapply(c("dplyr","tm","caret","Metrics","e1071","rARPACK","Matrix","kernlab",
        character.only=TRUE)
 if (Sys.getenv("JAVA_HOME")!="")
         Sys.setenv(JAVA_HOME="")
-library("RWeka");
-
+library("RWeka")
 
 #Stopwords dictionary
 dict<-unique(c(stopwords("english"),stopwords("SMART")))
